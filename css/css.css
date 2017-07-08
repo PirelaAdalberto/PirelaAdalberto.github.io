@@ -1,0 +1,141 @@
+/*Selector universal - borrar las margenes que agrega el navegador por defecto*/
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+/*BODY*/
+body{
+	background-color: white;/*color de fondo del cuerpo de la pagina*/
+}
+/*HEADER*/
+header img{
+	width: 100%;/*ancho del 100% del header y de la imagen del banner*/
+	background-color: #FDFEFE;/*color de fondo*/
+	padding-bottom: 10px;/*ampliar un poco el fondo para que sobrepase la imagen*/
+}
+/*estilo NAV*/
+nav{
+	background-color: #7B241C;/*colocar color al pasar el mouse por los links*/
+
+}
+nav a {
+	display:inline-block;/*Con esto definimos que el orden de nuestro menú sera horizontal y no vertical */
+	text-decoration: none;/*Eliminar las rayas que estan debajo de los links*/
+	color: white;/*color de latra*/
+	background-color: #7B241C;/*color de fondo de los links*/
+	padding: 20px;/*tamaño del link*/
+	margin: 5px;
+	font-family: "Arial", serif;/*tipo de letra de los módulos*/
+	font-size:90%;/*tamaño de la letra*/
+   	font-weight: normal;/*tipo de letra normal*/
+	 -webkit-border-radius: 5px;/*colocar borde para chrome*/
+	 -moz-border-radius: 5px;/*colocar borde para mozilla*/ 
+	 -o-border-radius: 5px;/*colocar borde para opera*/
+	 width: 12%;/*longitud de los navs*/
+	 box-sizing: content-box;
+	 border: 1px solid #FFFFFF;
+
+}
+nav a:hover{
+	background-color: #FFFFFF;/*colocar color al pasar el mouse por los links*/
+	color: #7B241C;/*cambiar el color de los nombres de los links*/
+	 -webkit-border-radius: 15px;/*colocar borde para chrome*/
+	 -moz-border-radius: 15px;/*colocar borde para mozilla*/ 
+	 -o-border-radius: 15px;/*colocar borde para opera*/
+}
+
+/*Estilo contenedor principal y enlaces*/
+div#contenedor_principal, .contenedor_enlaces{
+	background-color:#F8F9F9;/*color de fondo del contenedor principal*/
+	width: 90%;/*ancho del contenedor*/
+	margin: 0 auto;/*margen automatico*/
+	text-align: center;/*alinear los links al centro*/
+	max-width: 1200px;/*ancho máximo de la página*/
+    min-width:320px;/*ancho minimo de la pagina*/
+
+}
+
+main img{
+	width: 100%;
+	background-color: transparent;
+}
+/*FOOTER*/
+footer{
+	width: 100%;
+	background-color: #7B241C;
+	font-family: "Arial", serif;/*tipo de letra de los módulos*/
+	font-size:80%;
+   	font-weight: normal;
+   	color: #FFFFFF;
+   	padding-top: 1%;
+   	padding-bottom: 1%;
+}
+
+/*este label se usa para lo titulos*/
+label
+{
+	display:inline-block;/*linea en bloque*/
+	font-family: "Arial", serif;/*tipo de letra de los módulos*/
+	font-size:130%;/*tamaño*/
+   	font-weight: normal;
+   	background-color: #7B241C;
+   	color: #FFFFFF;
+   	width: 100%;/*ancho*/
+   	padding-top: 1%;/*espacio superior*/
+   	padding-bottom: 1%;/*espacio inferior*/
+   	margin-top: 1%;
+
+}
+
+/*estilo para parrafos*/
+p{
+	font-family: "Arial", serif;/*tipo de letra de los módulos*/
+	font-size:90%;
+   	font-weight: normal;/*normal*/
+   	padding: 2%;
+   	text-align: justify;/*justificar*/
+   	text-indent: 10px;/*sangria*/
+   	line-height: 1.8;/*espacio entre lineas de texto*/
+}
+/*estilo para los articulos*/
+article{
+	display:inline-block;/*linea en bloque*/
+	background-color: transparent;/*color de fondo transparente*/
+	padding: 1%;/*separacion interna de 1%*/
+	width: 30%;/*ancho de 30%*/
+}
+/*colocar estilo del separador*/
+hr{
+	width: auto;
+	margin: 5px;
+}
+
+/*implementar clase media para controlar la pagina en diferentes resoluciones*/
+@media screen and (max-width: 600px)
+{
+
+	div#contenedor_principal, .contenedor_enlaces{
+
+		width: 100%;
+	}
+	nav a{
+		width: 90%;
+		display: inline-block;
+	}
+
+
+}
+
+
+/*
+
+diferentes formas de trabajar con selectores
+a b c d ---> la etiqueta que esta dentro de c a su vez dentro de b 
+
+
+margin: externo
+paddin: interno;
+http://www.w3im.com
+
+*/
